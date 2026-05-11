@@ -17,14 +17,16 @@ public class MainActivity extends AppCompatActivity {
     Button btnPrev, btnNext;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
         ViewCompat.setOnApplyWindowInsetsListener(
                 findViewById(R.id.main),
-                new OnApplyWindowInsetsListener() {
+                new OnApplyWindowInsetsListener()
+                {
                     @Override
                     public WindowInsetsCompat onApplyWindowInsets(View v, WindowInsetsCompat insets) {
                         Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -46,9 +48,11 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Button btnEvent = (Button) v;
-            if (btnEvent == btnPrev) {
+            if (btnEvent == btnPrev)
+            {
                 flipper.showPrevious();
-            } else {
+            } else
+            {
                 flipper.showNext();
             }
         }
