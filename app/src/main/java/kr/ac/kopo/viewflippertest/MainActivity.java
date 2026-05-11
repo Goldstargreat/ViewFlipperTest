@@ -13,8 +13,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    ViewFlipper flipper;
-    Button btnPrev, btnNext;
+    ViewFlipper flipper; // 화면 전환용 객체 저장
+    Button btnPrev, btnNext; // 변수 선언(이전 버튼, 다음 버튼)
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
