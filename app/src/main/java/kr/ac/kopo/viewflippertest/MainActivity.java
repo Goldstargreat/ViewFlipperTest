@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity
 {
     ViewFlipper flipper; // 화면 전환용 객체 저장
-    Button btnStart, btnStop; // 변수 선언(이전 버튼, 다음 버튼)
+    Button btnStart, btnNext; // 변수 선언(이전 버튼, 다음 버튼)
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -45,12 +45,12 @@ public class MainActivity extends AppCompatActivity
 
         // 버튼 연결
         btnStart = findViewById(R.id.btn_prev);
-        btnStop = findViewById(R.id.btn_next);
+        btnNext = findViewById(R.id.btn_next);
         flipper = findViewById(R.id.flipper);
 
         // 클릭 이벤트 연결
         btnStart.setOnClickListener(btnListener);
-        btnStop.setOnClickListener(btnListener);
+        btnNext.setOnClickListener(btnListener);
 
         flipper.setFlipInterval(2000);
     }

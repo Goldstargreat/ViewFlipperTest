@@ -13,30 +13,51 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
-
         <Button
             android:id="@+id/btn_prev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
-            android:text="Start" />
-
+            android:text="Start"/>
         <Button
             android:id="@+id/btn_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Stop" />
+            android:text="Next"/>
     </LinearLayout>
-
     <ViewFlipper
         android:id="@+id/flipper"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:background="#ff0000" />
-        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:background="#ffff00" />
-        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:background="#0000ff" />
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff0000">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img01"
+                android:adjustViewBounds="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffff00">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img02"
+                android:adjustViewBounds="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img03"
+                android:adjustViewBounds="true"/>
+        </LinearLayout>
     </ViewFlipper>
-
 </LinearLayout>
